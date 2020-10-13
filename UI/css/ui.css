@@ -1,0 +1,74 @@
+body{
+  background: #c6eb7d;
+  font-size: 24px;
+  font-family: cursive;
+  color:rgb(15, 15, 15);
+  
+  text-align:center;
+  
+
+}
+
+.messages{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.messages li{
+ display: flex;
+}
+
+.messages li+li{
+  margin-top: 30px;
+}
+
+li.right-side{
+  flex-direction: row-reverse;
+ }
+
+
+.icon img{
+  width:65px;
+  height:65px;
+  border-radius: 30px;
+}
+.icon{
+  text-align: center;
+  width:100px;
+}
+
+.text{
+  background:rgb(250, 214, 220);
+  border-radius: 8px;
+  border:4px solid palevioletred;
+  padding :16px 24px; 
+  max-width: 60%;
+  line-height: 1.8;
+  position: relative;
+}
+
+.container{
+ padding: 32px;
+}
+
+
+
+.text::before{
+  content:"";
+  width: 0px;
+  height:0px;
+  border:16px solid transparent;
+  position: absolute;
+}
+
+.left-side .text::before{
+ top:12px;
+ left:-32px;
+ border-right-color: palevioletred;
+}
+
+.right-side .text::before{
+  top:12px;
+  right:-32px;
+  border-left-color: palevioletred;
+ }
