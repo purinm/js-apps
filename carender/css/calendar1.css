@@ -1,0 +1,54 @@
+body{
+  font-family: Consolas;
+  font-size: 24px;
+  
+}
+
+table{
+  border:2px solid #eee;
+  border-collapse: collapse;
+
+}
+thead,
+tfoot{
+  background-color: antiquewhite;
+
+}
+tfoot{
+  font-weight: 800;
+}
+
+th,
+td{
+text-align: center;
+padding: 8px;
+}
+
+tbody td:first-child{
+ color:red;
+}
+
+tbody td:last-child{
+  color:skyblue;
+}
+
+tfoot{
+  font-weight: bold;
+}
+
+td.disabled{
+ opacity:0.3;
+}
+
+td.today{
+  font-weight: bold;
+  background-color: rgb(245, 245, 142);
+}
+
+#prev,
+#next,
+#today{
+  cursor:pointer;
+  user-select: none;
+}
+
